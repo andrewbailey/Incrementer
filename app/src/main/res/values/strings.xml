@@ -19,6 +19,9 @@
         retain state if the Activity gets recreated.
     </string>
 
+    <string name="button_increment">+</string>
+    <string name="button_decrement">-</string>
+
     <string name="impl_portrait_locked">Portrait orientation</string>
     <string name="impl_portrait_locked_not_resizable">Portrait and not-resizable</string>
     <string name="impl_config_changes">android:configChanges</string>
