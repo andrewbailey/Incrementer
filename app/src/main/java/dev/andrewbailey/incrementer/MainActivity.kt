@@ -9,6 +9,7 @@ import dev.andrewbailey.incrementer.framework.SavedInstanceStateCounterActivity
 import dev.andrewbailey.incrementer.notresizable.PortraitLockedNotResizableCounterActivity
 import dev.andrewbailey.incrementer.portrait.PortraitLockedCounterActivity
 import dev.andrewbailey.incrementer.viewmodel.VMCounterActivity
+import dev.andrewbailey.incrementer.vmsavestate.VMSavedStateCounterActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         binding.implementationsList.apply {
             implSavedInstanceStateButton.setOnClickListener {
                 launchCounterActivity<SavedInstanceStateCounterActivity>()
+            }
+            implViewModelWithSaveStateButton.setOnClickListener {
+                launchCounterActivity<VMSavedStateCounterActivity>()
             }
             implPortraitLockedButton.setOnClickListener {
                 launchCounterActivity<PortraitLockedCounterActivity>()
