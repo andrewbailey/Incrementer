@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Incrementer</string>
+    <string name="header_about">
+        Incrementer provides multiple implementations of a simple counter app to demonstrate how
+        various state saving mechanisms do and do not fully handle various Activity recreation
+        events.
+    </string>
+
+    <string name="header_good_implementation">Correct implementations</string>
+    <string name="desc_good_implementation">
+        These implementations are valid approaches that you should use in your app to persist
+        application state across activity recreations.
+    </string>
+
+    <string name="header_bad_implementation">Incomplete implementations</string>
+    <string name="desc_bad_implementation">
+        These implementations do not fully handle all cases that can cause your Activities to restart.
+        None of these approaches handle process death, and only some of them make any attempt to
+        retain state if the Activity gets recreated.
+    </string>
+
+    <string name="impl_portrait_locked">Portrait orientation</string>
+    <string name="impl_portrait_locked_not_resizable">Portrait and not-resizable</string>
+    <string name="impl_config_changes">android:configChanges</string>
+    <string name="impl_saved_instance_state">savedInstanceState Bundle</string>
+    <string name="impl_view_model">ViewModel</string>
+    <string name="impl_view_model_with_save_state">ViewModel + SavedState</string>
 </resources>
