@@ -30,6 +30,9 @@
             tools:ignore="LockedOrientationActivity"
             tools:targetApi="n" />
 
+        <activity android:name=".configchanges.ConfigChangesCounterActivity"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize" />
+
     </application>
 
 </manifest>

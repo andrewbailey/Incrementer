@@ -3,6 +3,7 @@ package dev.andrewbailey.incrementer
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import dev.andrewbailey.incrementer.configchanges.ConfigChangesCounterActivity
 import dev.andrewbailey.incrementer.databinding.ActivityMainBinding
 import dev.andrewbailey.incrementer.framework.SavedInstanceStateCounterActivity
 import dev.andrewbailey.incrementer.notresizable.PortraitLockedNotResizableCounterActivity
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
             }
             implPortraitNotResizableButton.setOnClickListener {
                 launchCounterActivity<PortraitLockedNotResizableCounterActivity>()
+            }
+            implConfigChangesButton.setOnClickListener {
+                launchCounterActivity<ConfigChangesCounterActivity>()
             }
         }
     }
