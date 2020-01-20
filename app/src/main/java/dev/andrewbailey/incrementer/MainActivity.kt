@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import dev.andrewbailey.incrementer.databinding.ActivityMainBinding
 import dev.andrewbailey.incrementer.framework.SavedInstanceStateCounterActivity
+import dev.andrewbailey.incrementer.notresizable.PortraitLockedNotResizableCounterActivity
 import dev.andrewbailey.incrementer.portrait.PortraitLockedCounterActivity
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,9 @@ class MainActivity : AppCompatActivity() {
             }
             implPortraitLockedButton.setOnClickListener {
                 launchCounterActivity<PortraitLockedCounterActivity>()
+            }
+            implPortraitNotResizableButton.setOnClickListener {
+                launchCounterActivity<PortraitLockedNotResizableCounterActivity>()
             }
         }
     }
