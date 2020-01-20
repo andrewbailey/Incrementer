@@ -8,6 +8,7 @@ import dev.andrewbailey.incrementer.databinding.ActivityMainBinding
 import dev.andrewbailey.incrementer.framework.SavedInstanceStateCounterActivity
 import dev.andrewbailey.incrementer.notresizable.PortraitLockedNotResizableCounterActivity
 import dev.andrewbailey.incrementer.portrait.PortraitLockedCounterActivity
+import dev.andrewbailey.incrementer.viewmodel.VMCounterActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +32,9 @@ class MainActivity : AppCompatActivity() {
             }
             implConfigChangesButton.setOnClickListener {
                 launchCounterActivity<ConfigChangesCounterActivity>()
+            }
+            implViewModelOnlyButton.setOnClickListener {
+                launchCounterActivity<VMCounterActivity>()
             }
         }
     }

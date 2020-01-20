@@ -33,6 +33,8 @@
         <activity android:name=".configchanges.ConfigChangesCounterActivity"
             android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize" />
 
+        <activity android:name=".viewmodel.VMCounterActivity" />
+
     </application>
 
 </manifest>
