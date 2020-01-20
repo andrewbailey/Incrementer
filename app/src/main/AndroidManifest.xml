@@ -20,6 +20,10 @@
 
         <activity android:name=".framework.SavedInstanceStateCounterActivity" />
 
+        <activity android:name=".portrait.PortraitLockedCounterActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
     </application>
 
 </manifest>

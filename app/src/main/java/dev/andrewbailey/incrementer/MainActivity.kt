@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import dev.andrewbailey.incrementer.databinding.ActivityMainBinding
 import dev.andrewbailey.incrementer.framework.SavedInstanceStateCounterActivity
+import dev.andrewbailey.incrementer.portrait.PortraitLockedCounterActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         binding.implementationsList.apply {
             implSavedInstanceStateButton.setOnClickListener {
                 launchCounterActivity<SavedInstanceStateCounterActivity>()
+            }
+            implPortraitLockedButton.setOnClickListener {
+                launchCounterActivity<PortraitLockedCounterActivity>()
             }
         }
     }
