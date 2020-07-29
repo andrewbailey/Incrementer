@@ -3,7 +3,7 @@ Incrementer is an extremely basic counter app designed to demonstrate various co
 I have seen every single one of these incorrect implementations in production apps — apps that have between tens of thousands and millions of downloads!
 My goal is to educate more developers on how to avoid these mistakes and build apps without subtle bugs that result from these incorrect implementations.
 
-This app is featured in my talk called Falsehoods Android Developers Believe about Android Lifecycles, which you can find more information about at [andrewbailey.dev/falsehoods](https://andrewbailey.dev/falsehoods).
+This app is featured in my talk called Falsehoods Android Developers Believe about Lifecycles, which you can find more information about at [andrewbailey.dev/falsehoods](https://andrewbailey.dev/falsehoods).
 
 Here's an overview of how each implementation behaves:
 
@@ -24,9 +24,6 @@ This handles all Activity recreation situations.
 
 ### ViewModel + SavedState
 This implementation uses the androidx ViewModel library in addition to the SavedState library.
-SavedState is currently at version RC03 as of December 4, 2019, and depends on an RC versions of the androidx lifecycle artifact.
-
-Many apps that are using ViewModel are not using SavedState because it 
 It's a good idea to implement SavedState in your app so that your app state can be fully restored when Android kills your app's process.
 You can also accomplish the same thing as the SavedState library by manually copying data from your ViewModel into your `savedInstanceState` bundle, if you prefer.
 
